@@ -1,0 +1,147 @@
+/* GLOBAL STYLES */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #22c55e;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #22c55e;
+}
+
+/* SEARCH INPUT */
+input[type="text"] {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px;
+  margin: 30px auto 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  text-align: center;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+/* APP CONTAINER */
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+/* APP CARD */
+.app-card {
+  background-color: #2b2a2a;
+  padding: 15px;
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.app-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.app-card h3 {
+  font-size: 90%;
+  margin: 10px 0 5px;
+}
+
+/* INSTALL BUTTON */
+.install-btn {
+  background-color: #22c55e;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  color: #ffffff;
+  font-family: Arial;
+  letter-spacing: 1px;
+}
+
+.install-btn:hover {
+  background-color: #16a34a;
+}
+
+/* PLATFORM TOOLTIP */
+.platform-tooltip {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  width: 120px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120%;
+  transition: opacity 0.3s;
+  font-size: 0.8rem;
+}
+
+.platform-tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}

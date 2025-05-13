@@ -46,12 +46,27 @@ body {
   color: #22c55e;
 }
 
+/* NAV TOGGLE (Hamburger Icon) */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  height: 3px;
+  width: 35px;
+  background: white;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
 /* SEARCH INPUT */
 input[type="text"] {
   width: 80%;
   max-width: 400px;
   padding: 12px;
-  margin: 150px auto 20px;
+  margin: 12px auto 20px;
   border-radius: 8px;
   border: none;
   font-size: 16px;
@@ -144,4 +159,37 @@ input[type="text"] {
 .platform-tooltip:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .app-card {
+    width: 90%;
+  }
+
+  input[type="text"] {
+    width: 90%;
+  }
 }

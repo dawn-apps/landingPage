@@ -19,7 +19,6 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  flex-wrap: wrap;
 }
 
 .nav-logo {
@@ -56,7 +55,7 @@ body {
 
 .nav-toggle span {
   height: 3px;
-  width: 30px;
+  width: 35px;
   background: white;
   margin: 4px 0;
   transition: 0.3s;
@@ -122,6 +121,7 @@ input[type="text"] {
   display: block;
   margin-top: 10px;
   transition: background-color 0.3s ease;
+  color: #ffffff;
   font-family: Arial;
   letter-spacing: 1px;
 }
@@ -172,19 +172,15 @@ input[type="text"] {
     right: 0;
     width: 100%;
     text-align: center;
-    padding: 20px 0;
   }
 
   .nav-links.active {
     display: flex;
+    gap: 20px;
   }
 
   .nav-toggle {
     display: flex;
-  }
-
-  .navbar {
-    flex-wrap: wrap;
   }
 }
 

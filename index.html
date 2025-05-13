@@ -10,6 +10,14 @@
     <!-- NAVBAR -->
     <nav class="navbar">
       <div class="nav-logo">🎮 DOWN APPS 🎮</div>
+      <div
+        class="nav-toggle"
+        onclick="document.querySelector('.nav-links').classList.toggle('active')"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">Top Games</a></li>
@@ -25,21 +33,21 @@
     />
 
     <div class="app-container" id="appContainer">
-      <div class="app-card" data-name="poppy playtime chapter 3">
-        <img src="images/poppy-playtime-chapter-3.webp" alt="poppy playtime" />
-        <h3>POPPY PLAYTIME CHAPTER 3</h3>
-        <div class="platform-tooltip">
-          Platforms: 🖥📱<span class="tooltip-text">Android 📱<br />iOS 🍎</span>
-        </div>
-        <a href="#" class="install-btn">Install</a>
-      </div>
-
       <div class="app-card" data-name="poppy playtime chapter 4">
         <img
           src="images/WhatsApp Image 2025-05-11 at 13.43.03.jpeg"
           alt="Poppy Playtime"
         />
         <h3>POPPY PLAYTIME CHAPTER 4</h3>
+        <div class="platform-tooltip">
+          Platforms: 🖥📱<span class="tooltip-text">Android 📱<br />iOS 🍎</span>
+        </div>
+        <a href="#" class="install-btn">Install</a>
+      </div>
+
+      <div class="app-card" data-name="poppy playtime chapter 3">
+        <img src="images/poppy-playtime-chapter-3.webp" alt="poppy playtime" />
+        <h3>POPPY PLAYTIME CHAPTER 3</h3>
         <div class="platform-tooltip">
           Platforms: 🖥📱<span class="tooltip-text">Android 📱<br />iOS 🍎</span>
         </div>

@@ -1,7 +1,7 @@
 const searchInput = document.getElementById('searchInput');
 const appCards = document.querySelectorAll('.app-card');
 const noResult = document.getElementById('noResult');
-const requestForm = document.getElementById('requestForm');
+const requestForm = document.getElementById('requestForm'); // Optional
 
 searchInput.addEventListener('input', () => {
     const query = searchInput.value.trim().toLowerCase();
@@ -18,12 +18,12 @@ searchInput.addEventListener('input', () => {
     });
 
     noResult.style.display = found || query === '' ? 'none' : 'block';
-    requestForm.style.display = found || query === '' ? 'none' : 'block';
+
+    // Safely hide/show the request form if it exists
+    if (requestForm) {
+        requestForm.style.display = found || query === '' ? 'none' : 'block';
+    }
 });
 
-// Optional: close nav menu when a link is clicked (mobile)
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        document.querySelector('.nav-links').classList.remove('active');
-    });
+
 });

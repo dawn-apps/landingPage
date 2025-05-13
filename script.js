@@ -21,4 +21,9 @@ searchInput.addEventListener('input', () => {
     requestForm.style.display = found || query === '' ? 'none' : 'block';
 });
 
-
+// Optional: close nav menu when a link is clicked (mobile)
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('active');
+    });
+});
